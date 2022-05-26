@@ -640,4 +640,3 @@ GameID        GameName        MaxPlayers       Gametype
 - [ ] USE Products.Inventory; DROP TABLE Inventory:
 - [ ] UsE Products; DROP TABLE Inventory:
 
-
