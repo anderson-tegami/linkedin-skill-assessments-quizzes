@@ -580,3 +580,64 @@ _______
 - [ ] `UPDATE Students SET last_name='Smith' AND email = 'dsmith@rouxacademy.com' WHERE id=56295;`
 - [ ] `UPDATE Students SET last_name='Smith' AND email = 'dsmith@rouxacademy.com' WHERE id='56295';`
 
+#### Q49. Which statement could you use to select a random student from this table?
+
+- [ ] SELECT TOP (1) first name, last name FROM Student;
+- [ ] SELECT TOP (1) RAND (first name, last name) FROM Student;
+- [ ] SELECT TOP(1) first name, last name FROM Students ORDER BY NEWIDO):
+- [ ] SELECT TOP(1) first name, last name FROM RAND(Student):
+
+
+#### Q50. You create a table called Students with the following command. Later, you decide that a clustered index better fits your needs. What command(s)
+should you run?
+```tsql
+CREATE TABLE Students (
+	studentID int NOT NULL,
+        studentName nvarchar(50),
+CONSTRAINT PK_StudentID PRIMARY KEY NONCLUSTERED (sutdentID)
+);
+```
+
+- [ ] ALTER TABLE Students DROP CONSTRAINT PK StudentID;
+- [ ] ALTER TABLE Students ADD CONSTRAINT PK_StudentID PRIMARY KEY CLUSTERED (StudentID);
+- [ ] ALTER TABLE Students DROP CONSTRAINT PK StudentID ADD CONSTRAINT PK StudentID PRIMARY KEY CLUSTERED (StudentID);
+- [ ] ALTER TABLE Students ALTER CONSTRAINT PK StudentID PRIMARY KEY CLUSTERED (StudentID);
+- [ ] DROP CONSTRAINT PK StudentID ON Students: UPDATE TABLE Students ADD CONSTRAINT PK StudentID PRIMARY KEY CLUSTERED (StudentID);
+
+#### Q51. Given the Games table pictured, which querv returns the results shown?
+
+                                 Games
+GameID        GameName        MaxPlayers       Gametype
+100                 Chess                 2                        Board
+101                 Solitaire             1                        Card
+102                 Bridge                4                        Card 
+103                 Checkers              2                        Board     
+104                 Hearts                4                        Card  
+
+                    Results
+1                   Checkers 
+2                   Chess
+3                   Bridge
+4                   Hearts
+5                   Solitaire
+
+- [X] SELECT GameName FROM Games ORDER BY GameType, GameName;
+- [ ] SELECT GameName FROM Games ORDER BY GameName, GameType;
+- [ ] SELECT GameName FROM Games ORDER BY GameName;
+- [ ] SELECT GameName FROM Games ORDER BY GameType;
+
+#### Q52.  What is an example of a DML command in SQL?
+
+- [ ] DROP 
+- [ ] CREATE
+- [ ] ALTER
+- [X] INSERT
+
+#### Q53. Which statement deletes a table named Inventory from the Products database?
+
+- [X] USE Products; DELETE Inventory:
+- [ ] DROP TABLE Products.Inventory;
+- [ ] USE Products.Inventory; DROP TABLE Inventory:
+- [ ] UsE Products; DROP TABLE Inventory:
+
+
